@@ -19,11 +19,11 @@ class CodeBreaker {
 		let result = ''
 		if (exp.test(number)) {
 			if(number===this.randNumber) {
-				result = 'xxxx'
+				result = 'XXXX'
 			} else { 
 				for (var i = 0; i < 4; i++) {
 					if (number.charAt(i) === this.randNumber.charAt(i)) {
-						result = 'x' + result
+						result = 'X' + result
 					}
 					else if (this.randNumber.includes(number.charAt(i))) {
 						result += '_'
