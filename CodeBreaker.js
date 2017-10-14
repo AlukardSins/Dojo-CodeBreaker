@@ -7,12 +7,11 @@ class CodeBreaker {
 			text += possible.charAt(Math.floor(Math.random() * possible.length))
 		}
 		this.randNumber = text
-		console.log(this.randNumber)
 	}
-	setRandNumber(number) {
+	setSecret(number) {
 		this.randNumber = number
 	}
-	getRandNumber() {
+	getSecret() {
 		return this.randNumber
 	}
 	tryCode(number) {
