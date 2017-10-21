@@ -17,8 +17,4 @@ app.get('/tryCode/:secret', function(req, res) {
 	res.send({result: code.tryCode(number)})
 });
 
-app.listen(app.get('port'), function() {
-	console.log('NodeJS App listening on Port: ', app.get('port'));
-});
-
 module.exports = app;
