@@ -17,4 +17,9 @@ app.get('/tryCode/:secret', function(req, res) {
 	res.send({result: code.tryCode(number)})
 });
 
+app.get('/getSecret', function(req, res) {
+	number = req.params.secret;
+	res.send({result: code.getSecret()})
+});
+
 module.exports = app;
