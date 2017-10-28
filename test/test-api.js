@@ -92,3 +92,14 @@ describe('GET /tryCode/:number', function() {
 			});
 	});
 });
+
+describe('GET /getSecret', function() {
+	it('should return anwser code', function(done) {
+		request.get('/getSecret')
+			.expect(200)
+			.end(function(err, res){
+				if (err) return done(err);
+			   done();
+			});
+	});
+});
